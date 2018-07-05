@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a{
+	display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    background-color: Gray;
+    margin: 10px;
+    text-align: Center;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2><a href="1.html"> 면담</a></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="21.html">산업기능요원</a></li>
+      <li><a href="22.html">전문연구요원</a></li>
+      <li><a href="23.html">QnA</a></li>
+      <li><a href="24.html">김유성 교수님</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h2>산업기능요원</h2>
+    <p>교수님도 근처에서 이걸로 간 사람을 거의 못봐서 잘 모름 </p>
+    <p>2 학년 2 학기 끝나고 지원가능 </p>
+    <p>아마 고졸과 동급 취급 받으면서 다니는 거라 연봉이나 대우 등이 열악할 것 </p>
+  </article>
+</section>
+
+<footer>
+  <p>2018-07-04</p>
+</footer>
+
+</body>
+</html>

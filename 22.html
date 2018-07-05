@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a{
+	display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    background-color: Gray;
+    margin: 10px;
+    text-align: Center;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2><a href="1.html"> 면담</a></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="21.html">산업기능요원</a></li>
+      <li><a href="22.html">전문연구요원</a></li>
+      <li><a href="23.html">QnA</a></li>
+      <li><a href="24.html">김유성 교수님</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>전문연구요원 - 2 가지 케이스(<u>연구실+산업체</u>)</h1>
+		<h2> 1. 산업체 </h2>
+		<p> <strong>:석사 학위 취득 후 국가에서 배정받은 병역특례TO가 있는 회사에 지원하여 3 년간 근무함으로써 복무를 대체하는 것 </strong> </p>
+    <p> 석사는 2년 과정인데 막학기(2학년 2학기)나 막막학기(2학년 1학기)때부터 구직활동을 해서 본인이 가고싶은 여러 회사에 지원하여 합격한 곳 중 골라서 가는 것</p>
+
+		<h2> 2. 연구실 </h2>
+		<p><strong> : 석사 학위 취득 후 연구실 들어가서 박사 학위를 이수하는 도중에 병역특례 TO를 따내고 박사과정 수료로 복무를 대체하는 것 </strong> </p>
+    <p>TO를 따내는 방법에는 두가지가 있음: 교수님한테 잘보여서 추천받는 연구실 별로 배정된 TO(보통 1~2명)를 따내는 것과 연구실 상관없이 학점이나 영어성적이 일정 기준을 넘어서 병특 신청?을 하면 TO를 받을 수 있음 </p>
+		<p> 박사 과정 재학중에 TO 받는 것을 실패하거나 본인과 맞지 않는다고 판단되면 도중에 박사 과정을 포기하고 산업체로 갈 수도 있음</p>
+		</article>
+</section>
+
+<footer>
+  <p>2018-07-04</p>
+</footer>
+
+</body>
+</html>

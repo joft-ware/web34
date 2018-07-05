@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a{
+	  display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    background-color: Gray;
+    margin: 10px;
+    text-align: Center;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2><a href="1.html"> 면담</a></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="21.html">산업기능요원</a></li>
+      <li><a href="22.html">전문연구요원</a></li>
+      <li><a href="23.html">QnA</a></li>
+      <li><a href="24.html">김유성 교수님</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h2>김유성 교수님</h2>
+    <img src="http://cs.skku.edu/ajax/board/file/download/professor/1456879884400-8374ed4a2d6c9045c5ed7b9738b53aa1.png" alt="Kim" width=100px>
+    <p>데이터 센터 네트워크, 콘텐츠 중심 네트워크를 비롯하여 무전력 사물 네트워크에 이르기까지 다양한 네트워크 시스템에서의 성능 최적화 및 응용분야를 연구한다.
+ 더불어 무선 신호 및 가시광 통신 기술을 활용한 새로운 유저 인터페이스 개발, 증강 현실에 적용 등 혁신적인 네트워크 기술 활용 방안을 연구한다. </p>
+    <p> <a href="http://comnet.skku.edu/" color=white width=100px> [연구실 링크]  </a> </p>
+  </article>
+</section>
+
+<footer>
+  <p>2018-07-04</p>
+</footer>
+
+</body>
+</html>
